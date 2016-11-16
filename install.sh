@@ -33,7 +33,7 @@ uci commit system > /dev/null 2>&1
 uci add system button
 uci set system.@button[-1].button=BTN_0
 uci set system.@button[-1].action=released
-uci set system.@button[-1].handler="flock -xn /tmp/nexfi-upgrade.lock -c \"opkg update && opkg upgrade nexfi-std\""
+uci set system.@button[-1].handler="flock -xn /tmp/nexfi-upgrade.lock -c \"opkg update && opkg upgrade nexfi-guard\""
 uci set system.@button[-1].min=1
 uci set system.@button[-1].max=6
 uci -c /etc/config commit system
@@ -91,7 +91,7 @@ then
 fi
 mv /tmp/netconfig /etc/config/
 
-# start nexfi-std
+# start nexfi-guard
 echo "nameserver 202.96.209.133" > /etc/resolv.conf
 $NEXFI_ROOT/script-files/network/network.sh
 /etc/init.d/network restart

@@ -1,2 +1,2 @@
-# nexfi-std
-Nexfi-std for mobile mesh net intercommunication.
+# nexfi-guard
+Nexfi-guard for mobile mesh net intercommunication.

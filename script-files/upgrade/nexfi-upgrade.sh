@@ -82,7 +82,7 @@ nexfi_upgrade() {
         
         nexfi_name=$(echo $nexfi_file | awk -F '.' '{print $1}')
 
-        # uncompress nexfi-std program.
+        # uncompress nexfi-guard program.
         rm -rf /$DOWNLOAD_PATH/$nexfi_name
 	tar -zxvf /$DOWNLOAD_PATH/$nexfi_file -C /tmp/
 

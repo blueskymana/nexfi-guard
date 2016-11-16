@@ -9,7 +9,7 @@ rm -rf /tmp/msgfifo
 rm -f /etc/rc.d/K89network
 rm -f /etc/rc.d/S21nexfi
 
-# remove nexfi-std version file 
+# remove nexfi-guard version file 
 rm -f /root/conf_version
 rm -f /root/nexfi_version
 
