@@ -25,6 +25,9 @@ chmod +x /etc/rc.local
 # button configuration.
 cp $NEXFI_ROOT/install-files/BTN_0 /etc/rc.button/
 
+# uncompress guard.bz2
+bunzip2 -f $NEXFI_ROOT/bin-files/guard.bz2
+
 # delete system button config
 uci delete system.@button[0]
 uci delete system.@button[0]
